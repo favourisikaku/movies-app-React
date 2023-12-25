@@ -12,6 +12,9 @@ body{
   margin-right: 20px;
   margin-bottom: 20px;
 }
+.header h1 {
+  cursor: pointer;
+}
 .search{
   width: 400px;
   padding: 10px;
@@ -58,6 +61,36 @@ overflow: hidden;
   transform: translateY(102%);
   transition:  0.3s;
   max-height: 100%;
-  
   }
 
+  @media (max-width:767px) {
+    .header{
+      margin-right: 0px;
+    }
+    .header h1{
+     
+      font-size: 20px;
+    }
+    .search{
+      width: 200px;
+    }
+    .movie-cards{
+      margin-left: 0px;
+    }
+    .movie-card{
+      width: 150px;
+    }
+    .movie-title{
+      font-size: 15px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width:320px) {
+    .search{
+      width: 140px;
+    }
+    .movie-card{
+      margin: auto;
+    }
+  }

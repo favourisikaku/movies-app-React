@@ -19,11 +19,16 @@ const MoviesCard = () => {
     MoviesApi()
    }, [])
 
+   const home = () => {
+    console.log('hw');
+    MoviesApi()
+   }
+
   return (
     <div>
       <div className= "movie-container">
         <div className="header">
-          <h1>Movies App</h1>
+          <h1 onClick={home}>Movies App</h1>
           <Search movies = {movies} 
           setMovies = {setMovies} 
           searchMovies={searchMovies} 
